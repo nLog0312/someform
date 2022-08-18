@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.main {
+    height: 100vh;
+    background: url(../img/herve-papaux-C8msjV6W0IA-unsplash.jpg) no-repeat fixed center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.form-background {
+    background-color: #1d2024;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    opacity: .9;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px;
+    position: absolute;
+}
+
+.form {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+}
+
+.signup,
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    margin: 18px 0;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+input {
+    margin: 18px 0;
+    padding: 12px 20px;
+    padding-left: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(95, 95, 95, .4);
+}
+
+input::placeholder {
+    font-size: 1.3rem;
+    color: rgba(95, 95, 95, .4);
+}
+
+/* CSS SignUp/Login */
+/* CSS Left */
+.form-left {
+    width: 55%;
+    height: 120%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px;
+}
+
+.form-left-content {
+    margin: 50px 50px;
+    position: relative;
+}
+
+.text-form {
+    color: #ff9d8e;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.line {
+    position: relative;
+}
+
+.icon-line {
+    display: inline-block;
+    margin-left: -30px;
+    font-size: 1.5rem;
+    color: rgba(95, 95, 95, .4);
+    position: absolute;
+    bottom: 20px;
+}
+
+.btn-form-active {
+    background-color: #ff9d8e;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0;
+}
+
+.btn-form-active:hover {
+    background-color: rgba(255, 157, 142, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* CSS Right */
+.form-right {
+    width: 32%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-title {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin: 10px 0;
+}
+
+.content {
+    margin: 10px 0;
+}
+
+.btn-form {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-form:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.final-line a {
+    text-decoration: none;
+    color: rgba(95, 95, 95, .4);
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -50px;
+}
+
+/* CSS animation convert */
+.un-active {
+    display: none;
+}
+
+.slideToRight {
+    animation: slideToRight .3s linear forwards;
+}
+
+@keyframes slideToRight {
+    to {
+        transform: translateX(380px);
+    }
+    from {
+        transform: translateX(0px);
+    }
+}
+
+.slideToLeft {
+    animation: slideToLeft .3s linear forwards;
+}
+
+@keyframes slideToLeft {
+    to {
+        transform: translateX(-380px);
+    }
+}

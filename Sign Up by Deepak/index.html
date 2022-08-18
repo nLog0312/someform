@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp/LogIn</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="form-background"></div>
+        <div class="form">
+            <div class="signup">
+                <div class="form-left">
+                    <div class="form-left-content">
+                        <h1 class="text-form">Sign Up</h1>
+                        <div class="line first-line">
+                            <input type="text" placeholder="Full Name">
+                            <div class="icon-line">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                        </div>
+                        
+                        <div class="line second-line">
+                            <input type="text" id="signup-email" name="email" placeholder="Email">
+                            <div class="icon-line">
+                                <ion-icon name="mail-open-outline"></ion-icon>
+                            </div>
+                        </div>
+                        
+                        <div class="line third-line">
+                            <input type="text" id="signup-pass" name="Password" placeholder="Password">
+                            <div class="icon-line">
+                                <ion-icon name="key-outline"></ion-icon>
+                            </div>
+                        </div>
+    
+                        <button class="btn-form-active">Sign Up</button>
+                    </div>
+                </div>
+    
+                <div class="form-right">
+                    <h1 class="form-title">Have an account?</h1>
+                    <h3 class="content">
+                        Banjo tote bag bicycle rights. Hight Life sartorial cray beer 
+                        whatever street art fap.
+                    </h3>
+    
+                    <button class="btn-login">Login</button>
+                </div>
+            </div>
+    
+            <div class="login un-active">
+                <div class="form-right">
+                    <h1 class="form-title">Don't Have an account?</h1>
+                    <h3 class="content">
+                        Banjo tote bag bicycle rights. Hight Life sartorial cray beer 
+                        whatever street art fap.
+                    </h3>
+    
+                    <button class="btn-signup">Sign Up</button>
+                </div>
+
+                <div class="form-left">
+                    <div class="form-left-content">
+                        <h1 class="text-form">Log In</h1><div class="line second-line">
+                            <input type="text" id="signup-email" name="email" placeholder="Email">
+                            <div class="icon-line">
+                                <ion-icon name="mail-open-outline"></ion-icon>
+                            </div>
+                        </div>
+                        
+                        <div class="line third-line">
+                            <input type="text" id="signup-pass" name="Password" placeholder="Password">
+                            <div class="icon-line">
+                                <ion-icon name="key-outline"></ion-icon>
+                            </div>
+                        </div>
+    
+                        <div class="final-line">
+                            <a href="#">Forgot password?</a>
+                            <button class="btn-form-active">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, #5f4ba5, #6f349c);
+}
+
+.main {
+    background-image: linear-gradient(to top, #37125f, #41176e);
+    max-width: 50vw;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 1.6rem;
+}
+/* CSS Sign Up */
+/* CSS Sign Up Header */
+.signup-header {
+    padding: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-name {
+    width: 10%;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.66);
+}
+
+.header-name:last-child {
+    transform: translateX(-10px);
+}
+
+.header-icon {
+    display: flex;
+}
+
+.fb-icon,
+.tw-icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 1px solid #6c2c61;
+    background-image: linear-gradient(to top, #37125f, #41176e);
+}
+
+.tw-icon {
+    transform: translateX(-10px);
+    box-shadow: 0 0 10px 10px #37125f;
+}
+
+.fb-icon ion-icon,
+.tw-icon ion-icon {
+    font-size: 4.5rem;
+    padding-top: 20px;
+}
+
+.fb-icon a {
+    color: #4b6ea9;
+}
+
+.tw-icon a {
+    color: #65bbf2;
+}
+
+/* CSS Sign Up Body */
+.signup-body {
+    border-bottom: 2px solid #6d2c67;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #6d2c67;
+    border-radius: 4px;
+    background-color: #37125f;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+    color: #c1bbcb;
+    opacity: 1;
+}
+
+.forgot {
+    padding-bottom: 20px;
+}
+
+.forgot a {
+    color: #94416d;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+input[value='Login'] {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-size: 2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #14b266;
+    color: #c1bbcb;
+    cursor: pointer;
+}
+
+input[value='Login']:hover {
+    opacity: .8;
+    color: #c1bbcb;
+}
+
+.submit-login {
+    padding-bottom: 20px;
+}
+
+/* CSS Footer */
+input[value='Create New Account'] {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffce00;
+    color: #564600;
+    cursor: pointer;
+}
+
+input[value='Create New Account']:hover {
+    opacity: .8;
+    color: #564600e5;
+}
+
+.signup-footer {
+    padding: 30px 0;
+}
