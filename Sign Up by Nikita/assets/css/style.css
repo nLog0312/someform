@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.main {
+    height: 100vh;
+    background: url(../img/lucas-andrade-3a2Gdrsgjnw-unsplash.jpg) no-repeat fixed center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-form {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* CSS form back */
+.form-back {
+    width: 10%;
+    height: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.form-back-iconBack {
+    font-size: 2.6rem;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-back-iconEllipsis {
+    font-size: 3rem;
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CSS form sign in */
+.form-signIn {
+    width: 45%;
+    height: 100%;
+    background-color: #9165f3;
+    opacity: .95;
+}
+
+.signIn,
+.signUp {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-icon {
+    font-size: 3rem;
+}
+
+.text-form {
+    letter-spacing: .15rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* CSS form sign up */
+.form-signUp {
+    width: 45%;
+    height: 100%;
+    background-color: #242839;
+    opacity: .95;
+}
+
+/* CSS animation */
+.signIn-active,
+.signUp-active {
+    color: #fff;
+    margin: 50px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signIn-active .text-form,
+.signUp-active .text-form {
+    font-size: 2.5rem;
+    margin-bottom: 90px;
+}
+
+.input-form {
+    margin: 20px 0;
+    position: relative;
+}
+
+.form-input {
+    padding: 0 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: .25s ease;
+    font-size: 1.2rem;
+}
+
+.form-input:not(:placeholder-shown),
+.form-input:focus {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    user-select: none;
+    color: #999;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    transition: .25s ease;
+}
+
+.signIn-active .form-input:not(:placeholder-shown) + .form-label,
+.signIn-active .form-input:focus + .form-label {
+    top: -10px;
+    padding: 10px;
+    padding-bottom: 0;
+    display: inline-block;
+    background-color: #9165f3;
+    color: #fff;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.contact ul li{
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.contact ul li a {
+    color: #fff;
+}
+
+.btn-arrow {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.7);
+    transition: .3s ease;
+}
+
+.forgot-link {
+    margin-top: 50px;
+    font-size: 1.1rem;
+}
+
+.signUp-active {
+    position: relative;
+}
+
+.signUp-active .form-input:not(:placeholder-shown) + .form-label,
+.signUp-active .form-input:focus + .form-label {
+    top: -10px;
+    padding: 10px;
+    padding-bottom: 0;
+    display: inline-block;
+    background-color: #242839;
+    color: #fff;
+}
+
+.signUp-active .btn-arrow {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+}
+
+/* fade */
+.active {
+    cursor: auto;
+    animation: fadeOut .3s linear forwards;
+}
+
+.un-active {
+    cursor: pointer;
+    animation: fadeIn .3s linear forwards;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes fadeOut {
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        width: 15%;
+    }
+}
+
+.sideUp {
+    animation: slideUp .3s linear forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(-200px);
+        opacity: .3;
+    }
+}
+
+.sideWhite {
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99;
+    left: 10%;
+}
+
+.slideToRight {
+    animation: slideToRight .5s linear;
+}
+
+@keyframes slideToRight {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 30%;
+    }
+    50% {
+        width: 66%;
+    }
+    75% {
+        width: 80%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
